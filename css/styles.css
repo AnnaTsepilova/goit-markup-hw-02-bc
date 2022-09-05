@@ -1,0 +1,79 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --black-color: #000000;
+}
+
+.page {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: var(--black-color);
+}
+.logo-header {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Site nav */
+.site-nav a {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* Hero */
+.hero-title {
+    color: var(--primary-white-color);
+}
+
+/* Section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Features */
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+
+.page-header {
+
+}
+
+
+
+/* цвета на странице Студія
+
+логотип в хедере #2196F3 #000000
+
+ссілки в хедере #212121; при наведении #2196F3
+почта в хедере color: #757575; при наведении #2196F3 
+телефон в хедере color: #757575; при наведении #2196F3
+
+заголовки color: #212121; 
+
+основной текст color: #757575;
+
+логотип в футере #2196F3 #FFFFFF
+адрес в футере #FFFFFF
+мейл и телефон в футере color: rgba(255, 255, 255, 0.6);
+
+цвет фона background: #FFFFFF;
+вторичный цвет фона background: #F5F4FA;
+темный цвет фона background: #2F303A;
+
+*/
