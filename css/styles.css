@@ -4,6 +4,8 @@
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
     --black-color: #000000;
+    --background-secondary-color: #F5F4FA;
+    --background-accent-color: #2F303A;
 }
 
 .page {
@@ -12,10 +14,11 @@
 }
 
 .logo {
-    color: var(--black-color);
+    color: var(--accent-color);
+    text-decoration: none;
 }
 .logo-header {
-    color: var(--accent-color);
+    color: var(--black-color);
 }
 
 .list {
@@ -23,8 +26,9 @@
 }
 
 /* Site nav */
-.site-nav a {
+.site-nav .link {
     color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -32,12 +36,25 @@
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contacts-header {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.contacts-header:hover,
+.contacts-header:focus {
+    color: var(--accent-color);
+}
 
 
 /* Hero */
-.hero-title {
+/* .hero-title {
     color: var(--primary-white-color);
-}
+} */
 
 /* Section */
 .section-title {
@@ -54,6 +71,38 @@
 
 }
 
+.team-name,
+.work-list .title {
+    color: var(--title-text-color);
+}
+
+/* Footer */
+.logo-footer {
+ color: var(--primary-white-color);
+}
+
+.contacts-footer {
+    /* color: rgba(255, 255, 255, 0.6); */
+    text-decoration: none;
+}
+
+.btn-main {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-width: 0;
+}
+
+.btn-filter {
+    color: var(--title-text-color);
+    background-color: var(--background-secondary-color);
+    border-width: 0;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
 
 
 /* цвета на странице Студія
