@@ -6,6 +6,7 @@
     --black-color: #000000;
     --background-secondary-color: #F5F4FA;
     --background-accent-color: #2F303A;
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -32,7 +33,8 @@ body {
 }
 
 /* Site nav */
-.site-nav .link {
+.site-nav .link,
+.contacts-header {
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -42,7 +44,9 @@ body {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contacts-header:hover,
+.contacts-header:focus {
     color: var(--accent-color);
 }
 
@@ -51,55 +55,22 @@ body {
 }
 
 .contacts-header {
-    text-decoration: none;
     color: var(--primary-text-color);
 }
 
-.contacts-header:hover,
-.contacts-header:focus {
-    color: var(--accent-color);
-}
-
-
 /* Hero */
+
+.hero {
+    background-color: var(--background-accent-color);
+}
 .hero-title {
-    /* color: var(--primary-white-color); */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-}
-
-/* Section */
-.section-title {
-    color: var(--title-text-color);
-}
-
-/* Features */
-.feature-list .title {
-    color: var(--title-text-color);
-}
-
-
-.page-header {
-
-}
-
-.team-name,
-.work-list .title {
-    color: var(--title-text-color);
-}
-
-/* Footer */
-.logo-footer {
- color: var(--primary-white-color);
-}
-
-.contacts-footer {
-    /* color: rgba(255, 255, 255, 0.6); */
-    text-decoration: none;
+    color: var(--primary-white-color);
 }
 
 .btn-main {
@@ -111,7 +82,78 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
+
+/* Section */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Features */
+
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.feature-list .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Team */
+
+.team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-text-color);
+}
+
+.team .text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Footer */
+
+.bg-footer {
+    background-color: var(--background-accent-color);
+}
+
+.logo-footer {
+ color: var(--primary-white-color);
+}
+
+.adr-footer,
+.contacts-footer {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+
+.contacts-footer {
+    color: var(--contacts-footer-color);
+}
+
+.contacts-footer:hover,
+.contacts-footer:focus,
+.adr-footer:hover,
+.adr-footer:focus {
+    color: var(--accent-color);
+}
+
+/* страница Портфоліо */
 
 .btn-filter {
     color: var(--title-text-color);
@@ -120,8 +162,9 @@ body {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
+    line-height: 1.62;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
 .btn-filter:hover,
@@ -130,6 +173,18 @@ body {
     background-color: var(--accent-color);
 }
 
+.work-list .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.work-list .text {
+font-size: 16px;
+line-height: 1.88;
+}
 
 /* цвета на странице Студія
 
